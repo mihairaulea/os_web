@@ -1,0 +1,63 @@
+@use "../node_modules/bootstrap/scss/bootstrap";
+@use "../node_modules/rfs/scss";
+
+@font-face {
+    font-family: "Aeonikpro500";
+    src: url(../fonts/AeonikProMedium.ttf);
+}
+@font-face {
+    font-family: "Aeonikpro700";
+    src: url(../fonts/AeonikPro-Bold.otf);
+}
+@font-face {
+    font-family: "Aeonikpro900";
+    src: url(../fonts/AeonikProBlack.ttf);
+}
+
+/* Google Fonts Link */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    font-family: "Aeonikpro500", 'Inter', sans-serif;
+    font-size: clamp(16px, 1.25vw + 1rem, 20px);
+    font-weight: 400;
+    color: rgb(244, 244, 244);
+    background: linear-gradient(0deg, rgb(22, 22, 24) 0%, rgb(22, 22, 24) 100%), rgb(255, 255, 255);
+    line-height: 1.6;
+}
+
+.hero-content h1 {
+    font-family: "Aeonikpro900", 'Inter', sans-serif;
+    text-align: center;
+    color: rgb(244, 244, 244);
+    font-size: clamp(2.5rem, 11vw, 8.5rem);
+    font-weight: 900;
+    line-height: 0.9;
+    letter-spacing: -0.1rem;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-content p {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: rgb(244, 244, 244);
+    font-family: "Aeonikpro500", 'Inter', sans-serif;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.nav-link {
+    border-radius: 0; /* Make tabs rectangular */
+    color: #000; /* Default text color */
+    background-color: transparent; /* Default background */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.nav-link.active {
+    background-color: #000; /* Full black background for active tab */
+    color: #fff; /* White text for contrast */
+    border-radius: 0; /* Ensure active tab is also rectangular */
+}
